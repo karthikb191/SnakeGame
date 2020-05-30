@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 9a70f4d7ee800421ab3cc8d04c613a02
+timeCreated: 1506172496
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Inland_Taipan_new_0003:Body
+    100002: Inland_Taipan_new_0003:Eye_L
+    100004: Inland_Taipan_new_0003:Eye_R
+    100006: Inland_Taipan_new_0003:Fangs_L
+    100008: Inland_Taipan_new_0003:Fangs_R
+    100010: Inland_Taipan_new_0003:Inland_Taipan
+    100012: Inland_Taipan_new_0003:Jaw
+    100014: Inland_Taipan_new_0003:joint1
+    100016: Inland_Taipan_new_0003:joint10
+    100018: Inland_Taipan_new_0003:joint11
+    100020: Inland_Taipan_new_0003:joint12
+    100022: Inland_Taipan_new_0003:joint13
+    100024: Inland_Taipan_new_0003:joint14
+    100026: Inland_Taipan_new_0003:joint15
+    100028: Inland_Taipan_new_0003:joint16
+    100030: Inland_Taipan_new_0003:joint17
+    100032: Inland_Taipan_new_0003:joint18
+    100034: Inland_Taipan_new_0003:joint19
+    100036: Inland_Taipan_new_0003:joint2
+    100038: Inland_Taipan_new_0003:joint20
+    100040: Inland_Taipan_new_0003:joint21
+    100042: Inland_Taipan_new_0003:joint22
+    100044: Inland_Taipan_new_0003:joint23
+    100046: Inland_Taipan_new_0003:joint24
+    100048: Inland_Taipan_new_0003:joint25
+    100050: Inland_Taipan_new_0003:joint26
+    100052: Inland_Taipan_new_0003:joint27
+    100054: Inland_Taipan_new_0003:joint28
+    100056: Inland_Taipan_new_0003:joint29
+    100058: Inland_Taipan_new_0003:joint3
+    100060: Inland_Taipan_new_0003:joint30
+    100062: Inland_Taipan_new_0003:joint4
+    100064: Inland_Taipan_new_0003:joint5
+    100066: Inland_Taipan_new_0003:joint6
+    100068: Inland_Taipan_new_0003:joint7
+    100070: Inland_Taipan_new_0003:joint8
+    100072: Inland_Taipan_new_0003:joint9
+    100074: Inland_Taipan_new_0003:Lowerjoint21
+    100076: Inland_Taipan_new_0003:Lowerjoint22
+    100078: Inland_Taipan_new_0003:Lowerjoint23
+    100080: Inland_Taipan_new_0003:polySurface13
+    100082: Inland_Taipan_new_0003:polySurface15
+    100084: Inland_Taipan_new_0003:polySurface16
+    100086: Inland_Taipan_new_0003:Root
+    100088: Inland_Taipan_new_0003:Scalp
+    100090: Inland_Taipan_new_0003:Tongue1
+    100092: Inland_Taipan_new_0003:Tongue2
+    100094: Inland_Taipan_new_0003:Tongue3
+    100096: Inland_Taipan_new_0003:Tongue4
+    100098: Inland_Taipan_new_0003:Tongue5
+    100100: Inland_Taipan_new_0003:Tongue6
+    100102: Inland_Taipan_new_0003:Upperjaw
+    100104: Inland_Taipan_new_0003:World_Ctrl
+    100106: //RootNode
+    400000: Inland_Taipan_new_0003:Body
+    400002: Inland_Taipan_new_0003:Eye_L
+    400004: Inland_Taipan_new_0003:Eye_R
+    400006: Inland_Taipan_new_0003:Fangs_L
+    400008: Inland_Taipan_new_0003:Fangs_R
+    400010: Inland_Taipan_new_0003:Inland_Taipan
+    400012: Inland_Taipan_new_0003:Jaw
+    400014: Inland_Taipan_new_0003:joint1
+    400016: Inland_Taipan_new_0003:joint10
+    400018: Inland_Taipan_new_0003:joint11
+    400020: Inland_Taipan_new_0003:joint12
+    400022: Inland_Taipan_new_0003:joint13
+    400024: Inland_Taipan_new_0003:joint14
+    400026: Inland_Taipan_new_0003:joint15
+    400028: Inland_Taipan_new_0003:joint16
+    400030: Inland_Taipan_new_0003:joint17
+    400032: Inland_Taipan_new_0003:joint18
+    400034: Inland_Taipan_new_0003:joint19
+    400036: Inland_Taipan_new_0003:joint2
+    400038: Inland_Taipan_new_0003:joint20
+    400040: Inland_Taipan_new_0003:joint21
+    400042: Inland_Taipan_new_0003:joint22
+    400044: Inland_Taipan_new_0003:joint23
+    400046: Inland_Taipan_new_0003:joint24
+    400048: Inland_Taipan_new_0003:joint25
+    400050: Inland_Taipan_new_0003:joint26
+    400052: Inland_Taipan_new_0003:joint27
+    400054: Inland_Taipan_new_0003:joint28
+    400056: Inland_Taipan_new_0003:joint29
+    400058: Inland_Taipan_new_0003:joint3
+    400060: Inland_Taipan_new_0003:joint30
+    400062: Inland_Taipan_new_0003:joint4
+    400064: Inland_Taipan_new_0003:joint5
+    400066: Inland_Taipan_new_0003:joint6
+    400068: Inland_Taipan_new_0003:joint7
+    400070: Inland_Taipan_new_0003:joint8
+    400072: Inland_Taipan_new_0003:joint9
+    400074: Inland_Taipan_new_0003:Lowerjoint21
+    400076: Inland_Taipan_new_0003:Lowerjoint22
+    400078: Inland_Taipan_new_0003:Lowerjoint23
+    400080: Inland_Taipan_new_0003:polySurface13
+    400082: Inland_Taipan_new_0003:polySurface15
+    400084: Inland_Taipan_new_0003:polySurface16
+    400086: Inland_Taipan_new_0003:Root
+    400088: Inland_Taipan_new_0003:Scalp
+    400090: Inland_Taipan_new_0003:Tongue1
+    400092: Inland_Taipan_new_0003:Tongue2
+    400094: Inland_Taipan_new_0003:Tongue3
+    400096: Inland_Taipan_new_0003:Tongue4
+    400098: Inland_Taipan_new_0003:Tongue5
+    400100: Inland_Taipan_new_0003:Tongue6
+    400102: Inland_Taipan_new_0003:Upperjaw
+    400104: Inland_Taipan_new_0003:World_Ctrl
+    400106: //RootNode
+    2300000: Inland_Taipan_new_0003:Fangs_L
+    2300002: Inland_Taipan_new_0003:Fangs_R
+    2300004: Inland_Taipan_new_0003:polySurface13
+    2300006: Inland_Taipan_new_0003:polySurface16
+    3300000: Inland_Taipan_new_0003:Fangs_L
+    3300002: Inland_Taipan_new_0003:Fangs_R
+    3300004: Inland_Taipan_new_0003:polySurface13
+    3300006: Inland_Taipan_new_0003:polySurface16
+    4300000: Inland_Taipan_new_0003:polySurface15
+    4300002: Inland_Taipan_new_0003:polySurface16
+    4300004: Inland_Taipan_new_0003:polySurface13
+    4300006: Inland_Taipan_new_0003:Fangs_R
+    4300008: Inland_Taipan_new_0003:Fangs_L
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Inland_Taipan_new_0003:polySurface15
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 147
+      lastFrame: 397
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Inland_Taipan_new_0003:Inland_Taipan
+        weight: 1
+      - path: Inland_Taipan_new_0003:Inland_Taipan/Inland_Taipan_new_0003:Body
+        weight: 1
+      - path: Inland_Taipan_new_0003:Inland_Taipan/Inland_Taipan_new_0003:Body/Inland_Taipan_new_0003:polySurface15
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Lowerjoint22
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Lowerjoint22/Inland_Taipan_new_0003:Lowerjoint23
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1/Inland_Taipan_new_0003:Tongue2
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1/Inland_Taipan_new_0003:Tongue2/Inland_Taipan_new_0003:Tongue3
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1/Inland_Taipan_new_0003:Tongue2/Inland_Taipan_new_0003:Tongue3/Inland_Taipan_new_0003:Tongue4
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1/Inland_Taipan_new_0003:Tongue2/Inland_Taipan_new_0003:Tongue3/Inland_Taipan_new_0003:Tongue4/Inland_Taipan_new_0003:Tongue5
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Lowerjoint21/Inland_Taipan_new_0003:Tongue1/Inland_Taipan_new_0003:Tongue2/Inland_Taipan_new_0003:Tongue3/Inland_Taipan_new_0003:Tongue4/Inland_Taipan_new_0003:Tongue5/Inland_Taipan_new_0003:Tongue6
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Scalp
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Scalp/Inland_Taipan_new_0003:Eye_L
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Scalp/Inland_Taipan_new_0003:Eye_L/Inland_Taipan_new_0003:polySurface13
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Scalp/Inland_Taipan_new_0003:Eye_R
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Scalp/Inland_Taipan_new_0003:Eye_R/Inland_Taipan_new_0003:polySurface16
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Upperjaw
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Upperjaw/Inland_Taipan_new_0003:Fangs_L
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:Jaw/Inland_Taipan_new_0003:Upperjaw/Inland_Taipan_new_0003:Fangs_R
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25/Inland_Taipan_new_0003:joint26
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25/Inland_Taipan_new_0003:joint26/Inland_Taipan_new_0003:joint27
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25/Inland_Taipan_new_0003:joint26/Inland_Taipan_new_0003:joint27/Inland_Taipan_new_0003:joint28
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25/Inland_Taipan_new_0003:joint26/Inland_Taipan_new_0003:joint27/Inland_Taipan_new_0003:joint28/Inland_Taipan_new_0003:joint29
+        weight: 1
+      - path: Inland_Taipan_new_0003:World_Ctrl/Inland_Taipan_new_0003:Root/Inland_Taipan_new_0003:joint1/Inland_Taipan_new_0003:joint2/Inland_Taipan_new_0003:joint3/Inland_Taipan_new_0003:joint4/Inland_Taipan_new_0003:joint5/Inland_Taipan_new_0003:joint6/Inland_Taipan_new_0003:joint7/Inland_Taipan_new_0003:joint8/Inland_Taipan_new_0003:joint9/Inland_Taipan_new_0003:joint10/Inland_Taipan_new_0003:joint11/Inland_Taipan_new_0003:joint12/Inland_Taipan_new_0003:joint13/Inland_Taipan_new_0003:joint14/Inland_Taipan_new_0003:joint15/Inland_Taipan_new_0003:joint16/Inland_Taipan_new_0003:joint17/Inland_Taipan_new_0003:joint18/Inland_Taipan_new_0003:joint19/Inland_Taipan_new_0003:joint20/Inland_Taipan_new_0003:joint21/Inland_Taipan_new_0003:joint22/Inland_Taipan_new_0003:joint23/Inland_Taipan_new_0003:joint24/Inland_Taipan_new_0003:joint25/Inland_Taipan_new_0003:joint26/Inland_Taipan_new_0003:joint27/Inland_Taipan_new_0003:joint28/Inland_Taipan_new_0003:joint29/Inland_Taipan_new_0003:joint30
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
