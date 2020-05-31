@@ -42,10 +42,11 @@ public class PlayerWheel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private void Update()
     {
         //Debug.Log("Pivot: " + parentRectTransform.position);
-
+        
         Vector3 lookDirection = rectTransform.position - parentRectTransform.position;
         lookDirection.Normalize();
         Vector3 directionToMove = initialDirection;
+        
 
         if (pointerDown)
         {
@@ -64,14 +65,21 @@ public class PlayerWheel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             directionToMove = Vector3.Lerp(lookDirection, initialDirection, 0.15f);
         }
-        
         directionToMove.Normalize();
+
+        float signedAngle = Vector3.SignedAngle(initialDirection, directionToMove, parent.transform.forward);
+        if (Mathf.Abs(signedAngle) > 145)
+        {
+            rotationValue = -Mathf.Floor(Mathf.Sign(signedAngle) * 145 * 0.05f);
+            return;
+        }
+
         transform.rotation = Quaternion.LookRotation(lookDirection, parent.transform.up);
         transform.Rotate(0, 90, 90);
 
         rectTransform.position = parentRectTransform.position + directionToMove * distanceFromCenter;
 
-        rotationValue = -Mathf.Floor(Vector3.SignedAngle(initialDirection, directionToMove, parent.transform.forward) * 0.05f);
+        rotationValue = -Mathf.Floor(signedAngle * 0.05f);
     }
 
 
