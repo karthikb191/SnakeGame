@@ -58,7 +58,7 @@
 				// sample the texture
 				fixed4 col = tex2D(_MainTex, i.uv);
 				fixed4 renderTexCol = tex2D(_RenderTex, i.uv);
-				fixed4 prevTexCol = tex2D(_PreviousTexture, i.uv);
+				//fixed4 prevTexCol = tex2D(_PreviousTexture, i.uv);
 
 				renderTexCol.a = 0.5;
 				col = renderTexCol;

@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 10;
     public float rotateSpeed = 10;
-    Vector3 turnDirection;
+    Vector3 turnDirection;  //This is used to determine the alternate direction once snake hits the wall
     bool hitTheWall;
     float sign = 0;
     Animator animator;
@@ -16,9 +16,10 @@ public class Player : MonoBehaviour
         turnDirection = transform.forward;
         animator = GetComponentInChildren<Animator>();
     }
-
+    
     private void FixedUpdate()
     {
+        //Check for wall hit and depending on the direction of hit, decide the alternate direction to travel
         RaycastHit hitInfo;
         if (Physics.Raycast(gameObject.transform.position, transform.forward, out hitInfo, 0.05f))
         {
@@ -38,6 +39,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.paused)
+            return;
+
+
+        //player movement and rotation logic. Very simple turn animation included
         float rotationValue = PlayerWheel.Instance.rotationValue;
         animator.SetInteger("Turn", 0);
         if (!hitTheWall)
@@ -54,7 +60,7 @@ public class Player : MonoBehaviour
             }
             animator.SetInteger("Turn", (int)sign);
 
-            Debug.Log("Wall hit");
+            //Debug.Log("Wall hit");
             transform.Rotate(transform.up, (40  + rotationValue * 0.1f)* -sign * Time.deltaTime);
             transform.position += speed * 0.5f * Time.deltaTime * turnDirection;
         }

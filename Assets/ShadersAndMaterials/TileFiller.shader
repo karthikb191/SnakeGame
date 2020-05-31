@@ -121,7 +121,9 @@
                 fixed4 col = tex2D(_MainTex, i.uv);
 				fixed4 prevTexCol = tex2D(_PreviousTexture, i.uv);
 
+				//Add the tecture with the previous texture
 				col =  col + prevTexCol;
+
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }

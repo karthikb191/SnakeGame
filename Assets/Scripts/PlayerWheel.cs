@@ -41,7 +41,8 @@ public class PlayerWheel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     }
     private void Update()
     {
-        //Debug.Log("Pivot: " + parentRectTransform.position);
+        if (GameManager.Instance.paused)
+            return;
         
         Vector3 lookDirection = rectTransform.position - parentRectTransform.position;
         lookDirection.Normalize();

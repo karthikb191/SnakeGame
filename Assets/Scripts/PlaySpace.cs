@@ -14,13 +14,12 @@ public class PlaySpace : MonoBehaviour
 {
     public Grid grid;
     public GameObject player;
-    public RenderTexture texture;
-    public RenderTexture prevTexture;
     public Material drawTileMaterial;
-    public Material otherMat;
-    public float indexX = 0;
-    public float indexY = 0;
+    public Material tileFillerMaterial;
 
+    RenderTexture texture;
+    RenderTexture prevTexture;
+    
 
     //Color[] c;
     Vector3 meshExtents;
@@ -52,59 +51,34 @@ public class PlaySpace : MonoBehaviour
 
         Debug.Log("width and height: " + cellWidth + "  " + cellHeight);
         //To get the correct bottom left point even when the mesh is rotated
-        //bottomLeftPoint = Matrix4x4.Rotate(gameObject.transform.rotation) * bottomLeftPoint;
-        //bottomLeftPoint = transform.worldToLocalMatrix * bottomLeftPoint;
 
-        
-
+        texture = new RenderTexture(256, 256, 0);
+        texture.Create();
         prevTexture = new RenderTexture(texture);
         prevTexture.Create();
 
-        otherMat.SetTexture("_RenderTex", texture);
+        tileFillerMaterial.SetTexture("_RenderTex", texture);
         
         drawTileMaterial.SetTexture("_RenderTex", texture);
         drawTileMaterial.SetTexture("_PreviousTexture", Texture2D.blackTexture);
+
         
+        Debug.Log("Subscribing");
+        //Subscribe to on finished
+        GameManager.Instance.GameRestartEvent += ResetTextures;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (cellSet.Count == totalCellCount)
-            Debug.Log("All tiles are green now");
-
-        
-
-        Vector3 position = transform.worldToLocalMatrix * player.transform.position;
-        
-        Debug.DrawLine(Vector3.zero, position);
-        
-        Vector3 relPosition = position - bottomLeftPoint;
-        float x = Mathf.Floor(relPosition.x / (cellWidth));
-        float z = Mathf.Floor(relPosition.z / (cellHeight));
-
-        Vector4 boxDimensions;
-        boxDimensions.x = (float)x * 1.0f / grid.rows;
-        boxDimensions.y = ((float)x * 1.0f / grid.rows) + 1.0f / grid.rows;
-        boxDimensions.z = (float)z * 1.0f / grid.cols;
-        boxDimensions.w = ((float)z * 1.0f / grid.cols) + 1.0f / grid.cols;
-        //Debug.Log("Box Dimensions" + boxDimensions);
-
-        //Set the vector4 value in the shader ---xmin-xmax-ymin-ymax--- in texture coordinates
-        otherMat.SetVector("boxBounds", boxDimensions);
-
-        //Debug.Log("X: " + x + "   Z: " + z);
-
-
+        //This check makes sure that the FillTile isnt called once the game is over
+        if (GameManager.Instance.paused)
+            return;
 
         //Debug.DrawLine(Vector3.zero, bottomLeftPoint + new Vector3(2 * meshExtents.x, 0, 0));
+
         //Get the current player position and register the appropriate tile as visited\
-        //RegisterPlayerPosition();
-
-
-        otherMat.SetFloat("boxPositionX", indexX);
-        otherMat.SetFloat("boxPositionY", indexY);
-
+        RegisterPlayerPosition();
         FillTile();
     }
     
@@ -114,46 +88,102 @@ public class PlaySpace : MonoBehaviour
     /// </summary>
     void RegisterPlayerPosition()
     {
-        Vector3 position = player.transform.position;
+        //If the cell count in the set is equal to rowsXcol, game is finished
+        if (cellSet.Count == totalCellCount)
+        {
+            Debug.Log("All tiles are green now");
+            GameManager.Instance.GameFinished();
+        }
 
-        Vector3 localPosition = transform.worldToLocalMatrix * position;
+
+        //Calculations relative to the local space of the board, which ensures correct tile is filled even when the board is rotated
+        Vector3 position = transform.worldToLocalMatrix * player.transform.position;
+
+        Debug.DrawLine(Vector3.zero, position);
 
         Vector3 relPosition = position - bottomLeftPoint;
-        float x = Mathf.Floor(relPosition.x / cellWidth);
-        float z = Mathf.Floor(relPosition.z / cellHeight);
+        float x = Mathf.Floor(relPosition.x / (cellWidth));
+        float z = Mathf.Floor(relPosition.z / (cellHeight));
+
+
+        if(x >= 0 && x < grid.rows && z >= 0 && z < grid.cols)
+        {
+            int index = (int)(z * grid.cols + x);
+            if (cellSet.Add(index))
+            {
+                //Debug.Log("Added: " + index + " count: " + cellSet.Count);
+            }
+
+        }
 
         Vector4 boxDimensions;
         boxDimensions.x = (float)x * 1.0f / grid.rows;
         boxDimensions.y = ((float)x * 1.0f / grid.rows) + 1.0f / grid.rows;
         boxDimensions.z = (float)z * 1.0f / grid.cols;
         boxDimensions.w = ((float)z * 1.0f / grid.cols) + 1.0f / grid.cols;
-        Debug.Log("Box Dimensions" + boxDimensions);
-
+        //Debug.Log("Box Dimensions" + boxDimensions);
+        
         //Set the vector4 value in the shader ---xmin-xmax-ymin-ymax--- in texture coordinates
-        otherMat.SetVector("boxBounds", boxDimensions);
+        tileFillerMaterial.SetVector("boxBounds", boxDimensions);
 
-        Debug.Log("X: " + x + "   Z: " + z);
+        //Debug.Log("X: " + x + "   Z: " + z);
+
+
+        #region static board
+        //Static board Logic
+
+        //Vector3 position = player.transform.position;
+
+        //Vector3 localPosition = transform.worldToLocalMatrix * position;
+
+        //Vector3 relPosition = position - bottomLeftPoint;
+        //float x = Mathf.Floor(relPosition.x / cellWidth);
+        //float z = Mathf.Floor(relPosition.z / cellHeight);
+
+        //Vector4 boxDimensions;
+        //boxDimensions.x = (float)x * 1.0f / grid.rows;
+        //boxDimensions.y = ((float)x * 1.0f / grid.rows) + 1.0f / grid.rows;
+        //boxDimensions.z = (float)z * 1.0f / grid.cols;
+        //boxDimensions.w = ((float)z * 1.0f / grid.cols) + 1.0f / grid.cols;
+        //Debug.Log("Box Dimensions" + boxDimensions);
+
+        ////Set the vector4 value in the shader ---xmin-xmax-ymin-ymax--- in texture coordinates
+        //tileFillerMaterial.SetVector("boxBounds", boxDimensions);
+
+        //Debug.Log("X: " + x + "   Z: " + z);
+        #endregion
     }
 
 
     //Tile Fill logic
     void FillTile()
     {
-        
-        Graphics.Blit(Texture2D.whiteTexture, texture, otherMat, 0);
+        //Fills the proper tile on the plane by blitting textures.
+        //additive operation is performed on the prevTexture so that the previously filles tiles are not erased
+        Graphics.Blit(Texture2D.whiteTexture, texture, tileFillerMaterial, 0);
         
         RenderTexture temp = RenderTexture.GetTemporary(texture.descriptor);
-        Graphics.Blit(texture, temp, otherMat, 1);
-
-
+        Graphics.Blit(texture, temp, tileFillerMaterial, 1);
+        
         Graphics.Blit(temp, texture);
         
+        tileFillerMaterial.SetTexture("_PreviousTexture", prevTexture);
 
-        otherMat.SetTexture("_PreviousTexture", prevTexture);
-        drawTileMaterial.SetTexture("_PreviousTexture", prevTexture);
         Graphics.Blit(texture, prevTexture);
         
 
         temp.Release();
+    }
+
+    /// <summary>
+    /// This is subscribed to GameManager's game reset event. It's called once the button on UI is pressed
+    /// </summary>
+    void ResetTextures()
+    {
+
+        Debug.Log("Render textures have been reset");
+        Graphics.Blit(Texture2D.blackTexture, texture);
+        Graphics.Blit(Texture2D.blackTexture, prevTexture);
+        
     }
 }
