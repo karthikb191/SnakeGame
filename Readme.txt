@@ -3,3 +3,6 @@
 - Use the steering wheel on the bottom left corner to change snake's direction
 - Turn entire play area to green to complete the game
 - Basic game loop implemented with pause/resume button.
+- Board is customizable. can be scaled, rotated. 
+- Grid count is adjustable. Use inspector to set the grid count
+- Grid filling is done using a persistent render texture. No objects are spawned and there's no extra overhead. Grid count can be a million, there still wont be a performance overhead. But, position isn't tracked properly for such a huge grid count. Adding a slight offet to the UV in shader will help in this case

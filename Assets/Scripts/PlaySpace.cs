@@ -108,7 +108,7 @@ public class PlaySpace : MonoBehaviour
 
         if(x >= 0 && x < grid.rows && z >= 0 && z < grid.cols)
         {
-            int index = (int)(z * grid.cols + x);
+            int index = (int)(z * grid.rows + x);
             if (cellSet.Add(index))
             {
                 //Debug.Log("Added: " + index + " count: " + cellSet.Count);
