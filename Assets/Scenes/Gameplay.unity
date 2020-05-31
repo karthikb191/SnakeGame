@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185303741f751df41a9981dd2a0ce3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 1
   rotateSpeed: 20
 --- !u!4 &27868775
 Transform:
@@ -358,7 +358,7 @@ MonoBehaviour:
     rows: 5
     cols: 5
   player: {fileID: 1526536603}
-  drawTileMaterial: {fileID: 2100000, guid: 22d1c1965a744a040b6d95b5ea96070e, type: 2}
+  boardMaterial: {fileID: 2100000, guid: 22d1c1965a744a040b6d95b5ea96070e, type: 2}
   tileFillerMaterial: {fileID: 2100000, guid: c3e7e0cbc606dfd48bee0a8d7de37a5a, type: 2}
 --- !u!4 &381423784 stripped
 Transform:
@@ -712,8 +712,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.438383, y: 1, z: 1}
-  m_Center: {x: -0.048653774, y: 0, z: 0}
+  m_Size: {x: 22.661201, y: 1, z: 2.9981527}
+  m_Center: {x: 0.062745675, y: 0, z: -0.9990766}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,8 +1606,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.438383, y: 1, z: 1}
-  m_Center: {x: -0.048653774, y: 0, z: 0}
+  m_Size: {x: 22.438385, y: 1, z: 2.659781}
+  m_Center: {x: -0.048653774, y: 0, z: 0.82989013}
 --- !u!1 &1520210749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,8 +2578,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.438383, y: 1, z: 1}
-  m_Center: {x: -0.048653774, y: 0, z: 0}
+  m_Size: {x: 22.859385, y: 1, z: 1.9914167}
+  m_Center: {x: 0.16183609, y: 0, z: 0.49570838}
 --- !u!1 &2054489790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,5 +2701,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.438383, y: 1, z: 1}
-  m_Center: {x: -0.048653774, y: 0, z: 0}
+  m_Size: {x: 22.84439, y: 1, z: 2.6987622}
+  m_Center: {x: 0.15434471, y: 0, z: -0.849381}

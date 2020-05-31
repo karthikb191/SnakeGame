@@ -14,7 +14,7 @@ public class PlaySpace : MonoBehaviour
 {
     public Grid grid;
     public GameObject player;
-    public Material drawTileMaterial;
+    public Material boardMaterial;
     public Material tileFillerMaterial;
 
     RenderTexture texture;
@@ -59,8 +59,8 @@ public class PlaySpace : MonoBehaviour
 
         tileFillerMaterial.SetTexture("_RenderTex", texture);
         
-        drawTileMaterial.SetTexture("_RenderTex", texture);
-        drawTileMaterial.SetTexture("_PreviousTexture", Texture2D.blackTexture);
+        boardMaterial.SetTexture("_RenderTex", texture);
+        boardMaterial.SetTexture("_PreviousTexture", Texture2D.blackTexture);
 
         
         Debug.Log("Subscribing");
@@ -164,11 +164,12 @@ public class PlaySpace : MonoBehaviour
         
         RenderTexture temp = RenderTexture.GetTemporary(texture.descriptor);
         Graphics.Blit(texture, temp, tileFillerMaterial, 1);
-        
+
+
         Graphics.Blit(temp, texture);
         
-        tileFillerMaterial.SetTexture("_PreviousTexture", prevTexture);
 
+        tileFillerMaterial.SetTexture("_PreviousTexture", prevTexture);
         Graphics.Blit(texture, prevTexture);
         
 
@@ -184,6 +185,7 @@ public class PlaySpace : MonoBehaviour
         Debug.Log("Render textures have been reset");
         Graphics.Blit(Texture2D.blackTexture, texture);
         Graphics.Blit(Texture2D.blackTexture, prevTexture);
-        
+        //texture.Release();
+        //prevTexture.Release();
     }
 }

@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
     public float speed = 10;
     public float rotateSpeed = 10;
     Vector3 turnDirection;  //This is used to determine the alternate direction once snake hits the wall
+    Vector3 currentDirection;  //This is used to determine the alternate direction once snake hits the wall
     bool hitTheWall;
     float sign = 0;
+    float prevSign = 0;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -25,10 +27,11 @@ public class Player : MonoBehaviour
         {
             if (hitInfo.collider.tag == "wall")
             {
-                sign = Mathf.Sign(Vector3.SignedAngle(hitInfo.normal, transform.forward, transform.up));
-                
-                //Debug.Log(-sign);
+                if(!hitTheWall)
+                    sign = Mathf.Sign(Vector3.SignedAngle(hitInfo.normal, transform.forward, transform.up));
                 hitTheWall = true;
+                //Debug.Log(-sign);
+                
                 turnDirection = Quaternion.AngleAxis( -sign * 125, gameObject.transform.up) * transform.forward;
                 
             }
@@ -53,16 +56,16 @@ public class Player : MonoBehaviour
         }
         else
         {
-            turnDirection = Vector3.Lerp(turnDirection, gameObject.transform.forward, 0.05f);
-            if(Vector3.Dot(turnDirection, gameObject.transform.forward) > 0.95f)
+            currentDirection = Vector3.Lerp(gameObject.transform.forward, turnDirection, 0.1f);
+            if(Vector3.Dot(currentDirection, gameObject.transform.forward) > 0.95f)
             {
                 hitTheWall = false;
             }
             animator.SetInteger("Turn", (int)sign);
 
             //Debug.Log("Wall hit");
-            transform.Rotate(transform.up, (40  + rotationValue * 0.1f)* -sign * Time.deltaTime);
-            transform.position += speed * 0.5f * Time.deltaTime * turnDirection;
+            transform.Rotate(transform.up, (40  + rotationValue)* -sign * Time.deltaTime);
+            transform.position -=  0.05f * Time.deltaTime * currentDirection;
         }
 
     }

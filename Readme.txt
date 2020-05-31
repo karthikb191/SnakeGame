@@ -1,0 +1,5 @@
+- Snake always moves forward
+- When it hits a wall, it tries to turn back. Direction it turns depends on the forward vector of snake and the normal of the collider.
+- Use the steering wheel on the bottom left corner to change snake's direction
+- Turn entire play area to green to complete the game
+- Basic game loop implemented with pause/resume button.

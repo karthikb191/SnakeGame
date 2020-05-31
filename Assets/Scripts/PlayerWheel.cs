@@ -69,9 +69,9 @@ public class PlayerWheel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         directionToMove.Normalize();
 
         float signedAngle = Vector3.SignedAngle(initialDirection, directionToMove, parent.transform.forward);
-        if (Mathf.Abs(signedAngle) > 145)
+        if (Mathf.Abs(signedAngle) > 125)
         {
-            rotationValue = -Mathf.Floor(Mathf.Sign(signedAngle) * 145 * 0.05f);
+            rotationValue = -Mathf.Floor(Mathf.Sign(signedAngle) * 125 * 0.05f);
             return;
         }
 
