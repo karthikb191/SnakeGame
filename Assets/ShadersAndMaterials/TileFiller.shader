@@ -8,9 +8,9 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+		Tags { "RenderType" = "Transparent"}
         LOD 100
-		Cull off
+		//Cull off
         Pass
         {
             CGPROGRAM
@@ -40,6 +40,7 @@
             float4 _MainTex_ST;
 			float boxPositionX;
 			float boxPositionY;
+			float4 boxBounds;
 
             v2f vert (appdata v)
             {
@@ -57,12 +58,15 @@
 				fixed4 renderTexCol = tex2D(_RenderTex, i.uv);
 				fixed4 prevTexCol = tex2D(_PreviousTexture, i.uv);
 
-				if (i.uv.x > 1 - boxPositionX && i.uv.y > 1 - boxPositionY) {
+				//if (i.uv.x > 1 - boxPositionX && i.uv.y > 1 - boxPositionY) {
+				if (i.uv.x < 1 - boxBounds.x && i.uv.x > 1 - boxBounds.y 
+					&& i.uv.y < 1- boxBounds.z && i.uv.y > 1- boxBounds.w) {
 					renderTexCol.r = 0;
 					renderTexCol.g = 1;
 					renderTexCol.b = 0;
 					renderTexCol.a = 1;
 				}
+
 				col = col * renderTexCol; // prevTexCol;// +prevTexCol;
 				//col = prevTexCol;
                 // apply fog
